@@ -104,14 +104,64 @@ header {
     .logo-img {
       width: 140px;
     }  
-  }      
+  }        
 }
 .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
   border-color: #fff transparent transparent !important;
 }
+.search-popup {
+  width: 900px !important;
+  max-width: 100%;
+  background: transparent !important;
+  border:0px !important;
+  .foundation-search-bar {
+    margin-top: 30px; 
+    .input-group-field {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid #fff;
+      border-radius: 0px;
+      font-size: 40px;
+      color: #fff;
+      &:focus {
+        box-shadow: none;
+      }
+    } 
+    .input-group-button {
+      a {
+        padding: 10px;
+        i {
+          color: #fff;
+          position: relative;
+          top: 10px;
+          left: -40px;
+        }
+      }
+    }  
+  }
+  .close-button {
+    position: absolute;
+    top: 0px !important;
+    border: 2px solid #fff;
+    border-radius: 50% !important;
+    padding: 1px 7px;
+    color: #fff !important;  
+    &:hover {
+      color: #fff !important;
+    }
+    &:focus {
+      color: #fff !important;
+    }
+  }  
+}
 .clear {
 	clear:both;
 }
+.reveal-overlay {
+  background-color: rgba(10, 10, 10, 0.9) !important;
+  z-index: 999999 !important;
+}
+
 
 /******************* Header End **********************/
 
