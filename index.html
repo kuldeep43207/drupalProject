@@ -36,18 +36,21 @@
           </ul>
           <div class="header-search-bar">
             <div class="header-search-icon float-left">
-              <a href="#"><i class="fas fa-search"></i></a>
+              <a data-toggle="animatedModal10"><i class="fas fa-search"></i></a>
             </div>                
-            <div class="header-search-open">
-              <input type="search" placeholder="Search">
-              <button type="button" class="button">Search</button>
-            </div>
             <div class="right-vertical-menus float-right">
               <button type="button" class="button" data-toggle="offCanvasRight1">
                 <i class="fas fa-bars fa-2x"></i>
               </button>
             </div>
           </div>
+          <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
+            <h1>Whoa, I'm dizzy!</h1>
+            <p class="lead">There are many options for animating modals, check out the Motion UI library to see them all</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>          
           <!-- Verticle Menus -->          
             <div class="off-canvas-wrapper off-canvas-right-wrapper">
               <div class="off-canvas vertical-menus-right position-right" id="offCanvasRight1" data-off-canvas>
