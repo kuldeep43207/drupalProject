@@ -32,7 +32,24 @@ header {
       display: inline-block;
       li {
         float: left;
-        height: 90px;  
+        height: 90px;
+        @media only screen and (max-width: 639px) {
+          float: none;
+        }
+        &:last-child {
+          a {
+            &:hover {
+              background: transparent;
+              color: #fff;
+              text-decoration: none;
+              -webkit-transition:0.3s all ease;
+              transition:0.3s ease all;          
+            }
+            &:focus {
+              outline: 0;         
+            }                        
+          }
+        }  
         a {
           color: #fff;
           padding: 0 22px;
@@ -60,10 +77,10 @@ header {
     float: right;
     height: 91px;
     padding-top: 27px;
+    padding-left: 15px;    
     @media only screen and (max-width: 1023px) {
       padding-top: 23px;
     }    
-    padding-left: 15px;
     a {
       font-size: 26px; 
       position: relative;
@@ -79,16 +96,22 @@ header {
   } 
   .right-vertical-menus {
     .button {
-      padding: 0.45em 0.55em;
-      border-radius: 50%;          
+      padding: 0.60em 0.70em;
+      border-radius: 50%;
+      i {
+        font-size: 1.4rem;
+      }          
     }
   }
   .vertical-menus-right { 
     &.off-canvas {
-      background: #000000c2 !important;
+      background: #fff !important;
     } 
     .close-button {
       color: #fff;
+      background: #6cb4d6;
+      padding: 5px 12px;
+      border-radius: 50%;
     } 
     ul {
       width:100%;
